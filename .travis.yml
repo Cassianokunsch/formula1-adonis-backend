@@ -1,0 +1,23 @@
+sudo: required
+language: node_js
+
+node_js:
+  - 11.13
+
+install:
+  - npm i
+  - npm i -g @adonisjs/cli
+
+before_script:
+  - npm run lint
+
+script:
+  - npm run test
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU_API_KEY
+  app: ws-ljf1
+  on:
+    branch: develop

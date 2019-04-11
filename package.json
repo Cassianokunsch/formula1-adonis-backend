@@ -1,12 +1,14 @@
 {
-  "name": "adonis-api-app",
-  "version": "4.1.0",
+  "name": "ws-ljf1",
+  "version": "0.0.1",
   "adonis-version": "4.1.0",
-  "description": "Adonisjs boilerplate for API server with pre-configured JWT",
-  "main": "index.js",
+  "description": "LJF1 web service",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "node ace test"
+    "test": "echo \"node ace test\"",
+    "lint": "eslint ./*.js",
+    "lint:fix": "prettier-eslint \"**/*.js\""
   },
   "keywords": [
     "adonisjs",
@@ -25,7 +27,26 @@
     "@adonisjs/ignitor": "^2.0.8",
     "@adonisjs/lucid": "^6.1.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "prettier-eslint-cli": "^4.7.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint",
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "autoload": {
     "App": "./app"
   }
