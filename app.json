@@ -33,7 +33,7 @@
       "generator": "secret"
     },
     "DB_USER": {
-      "required": true
+      "generator": "secret"
     },
     "ENV_SILENT": {
       "generator": "secret"
