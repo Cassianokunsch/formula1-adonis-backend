@@ -17,7 +17,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: HEROKU_API_KEY
+    secure: 2ca21857-088c-47a6-bb2c-c758d48e2a16
   app: ws-ljf1
   on:
     branch: develop
