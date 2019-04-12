@@ -25,7 +25,7 @@
       "required": true
     },
     "DB_PASSWORD": {
-      "required": true
+      "required": ""
     },
     "DB_PORT": {
       "required": true
