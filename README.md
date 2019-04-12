@@ -1,5 +1,7 @@
 # Adonis API application
 
+[![Build Status](https://travis-ci.org/Cassianokunsch/ws-ljf1.svg?branch=develop)](https://travis-ci.org/Cassianokunsch/ws-ljf1)
+
 This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
 
 1. Bodyparser
