@@ -1,10 +1,10 @@
 {
   "addons": [
-
+    {
+      "plan": "heroku-postgresql:hobby-dev"
+    }
   ],
-  "buildpacks": [
-
-  ],
+  "buildpacks": [],
   "env": {
     "APP_KEY": {
       "required": true
@@ -49,7 +49,6 @@
     }
   },
   "name": "ws-ljf1",
-  "scripts": {
-  },
+  "scripts": {},
   "stack": "heroku-18"
 }
