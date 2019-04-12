@@ -1,0 +1,33 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "APP_KEY": "wdf8EFXPjM7bsYMQx8saMSF3XBKxNQ4X",
+    "APP_URL": "http://${HOST}:${PORT}",
+    "CACHE_VIEWS": "false",
+    "DB_CONNECTION": "sqlite",
+    "DB_DATABASE": "adonis",
+    "DB_HOST": "127.0.0.1",
+    "DB_PASSWORD": "",
+    "DB_PORT": "3306",
+    "DB_USER": "root",
+    "ENV_SILENT": "true",
+    "HOST": "0.0.0.0",
+    "NODE_ENV": "development"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "ws-ljf1",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
