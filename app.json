@@ -6,7 +6,7 @@
   ],
   "buildpacks": [],
   "env": {
-    "STAGING_DATABASE_URL": {
+    "DATABASE_URL": {
       "required": true
     }
   },
