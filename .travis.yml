@@ -22,5 +22,3 @@ deploy:
   app:
     develop: ws-ljf1-develop
     master: ws-ljf1
-  run:
-    - 'adonis migration:run'
