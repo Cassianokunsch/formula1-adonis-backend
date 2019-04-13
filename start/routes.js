@@ -16,6 +16,6 @@ const Route = use('Route');
 
 Route.get('/', () => ({ greeting: 'Hello world in JSON' }));
 
-Route.get('/teste', () => ({ greeting: 'uai' }));
+Route.post('/sessions', 'SessionController.create');
 
 Route.post('/users', 'UserController.create');
