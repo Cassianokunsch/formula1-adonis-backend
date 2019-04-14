@@ -1,10 +1,6 @@
 {
-  "addons": [
-
-  ],
-  "buildpacks": [
-
-  ],
+  "addons": [],
+  "buildpacks": [],
   "env": {
     "APP_KEY": {
       "required": true
@@ -25,7 +21,7 @@
       "required": true
     },
     "DB_PASSWORD": {
-      "value": ""
+      "required": true
     },
     "DB_PORT": {
       "required": true
@@ -49,7 +45,6 @@
     }
   },
   "name": "ws-ljf1",
-  "scripts": {
-  },
+  "scripts": {},
   "stack": "heroku-18"
 }
