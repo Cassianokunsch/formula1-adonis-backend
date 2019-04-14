@@ -6,7 +6,7 @@
   ],
   "buildpacks": [],
   "env": {
-    "DATABASE_URL": {
+    "STAGING_DATABASE_URL": {
       "required": true
     }
   },
@@ -17,7 +17,7 @@
   },
   "name": "ws-ljf1",
   "scripts": {
-    "postdeploy": "pg_dump -Ox $STAGING_DATABASE_URL | psql $DATABASE_URL"
+    "postdeploy": "pg_dump $STAGING_DATABASE_URL | psql $DATABASE_URL"
   },
   "stack": "heroku-18"
 }
