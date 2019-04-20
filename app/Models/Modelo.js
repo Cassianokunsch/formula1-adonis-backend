@@ -2,6 +2,10 @@
 const Model = use('Model');
 
 class Modelo extends Model {
+  static get hidden() {
+    return ['created_at', 'updated_at'];
+  }
+
   veiculos() {
     return this.hasMany('App/Models/Veiculo');
   }
