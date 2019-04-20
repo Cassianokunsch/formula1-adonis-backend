@@ -12,15 +12,8 @@ install:
 before_script:
   - npm run lint
 
-addons:
-  sonarcloud:
-    organization: "cassianokunsch-github"
-    token:
-      secure: $TOKEN_SONAR_KEY
-
 script:
   - npm run test
-  - sonar-scanner
 
 deploy:
   provider: heroku
