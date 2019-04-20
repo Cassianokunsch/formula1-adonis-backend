@@ -15,11 +15,13 @@ class OrdemServicoSchema extends Schema {
       table
         .integer('forma_pagamento_id')
         .unsigned()
+        .notNullable()
         .references('id')
         .inTable('forma_pagamentos');
       table
         .integer('veiculo_id')
         .unsigned()
+        .notNullable()
         .references('id')
         .inTable('veiculos');
     });

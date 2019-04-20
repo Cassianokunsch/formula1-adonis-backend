@@ -6,7 +6,7 @@ class FormaPagamentoSchema extends Schema {
     this.create('forma_pagamentos', (table) => {
       table.increments();
       table.timestamps();
-      table.string('descricao_pagamento');
+      table.string('descricao_formapagamento').notNullable();
     });
   }
 

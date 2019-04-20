@@ -14,11 +14,13 @@ class VeiculoSchema extends Schema {
       table
         .integer('cliente_id')
         .unsigned()
+        .notNullable()
         .references('id')
         .inTable('clientes');
       table
         .integer('marca_id')
         .unsigned()
+        .notNullable()
         .references('id')
         .inTable('marcas');
     });

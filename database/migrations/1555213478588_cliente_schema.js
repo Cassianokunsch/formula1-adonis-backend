@@ -7,7 +7,7 @@ class ClienteSchema extends Schema {
       table.increments();
       table.timestamps();
       table.string('nome_cliente', 30).notNullable();
-      table.string('telefone', 9).notNullable();
+      table.string('telefone', 11).notNullable();
     });
   }
 

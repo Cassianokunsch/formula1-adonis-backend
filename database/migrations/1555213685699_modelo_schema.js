@@ -10,6 +10,7 @@ class ModeloSchema extends Schema {
       table
         .integer('marca_id')
         .unsigned()
+        .notNullable()
         .references('id')
         .inTable('marcas');
     });

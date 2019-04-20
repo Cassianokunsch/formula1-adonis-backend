@@ -10,11 +10,13 @@ class OrdemServicoItenSchema extends Schema {
       table
         .integer('ordem_servico_id')
         .unsigned()
+        .notNullable()
         .references('id')
         .inTable('ordem_servicos');
       table
         .integer('servico_id')
         .unsigned()
+        .notNullable()
         .references('id')
         .inTable('servicos');
     });
